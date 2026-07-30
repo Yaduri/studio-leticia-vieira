@@ -1,0 +1,3846 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Studio Letícia Vieira Estética e Saúde em Campo Limpo Paulista. Cuidados faciais, corporais, beleza e bem-estar. Agende pelo WhatsApp."
+    >
+
+    <title>Studio Letícia Vieira | Estética e Saúde</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =====================================================
+           CORES E CONFIGURAÇÕES
+        ===================================================== */
+
+        :root {
+
+            --gold: #dec67c;
+
+            --gold-dark: #9b833a;
+
+            --cream: #faf8f2;
+
+            --beige: #f1e9d4;
+
+            --ink: #302b22;
+
+            --muted: #6e685d;
+
+            --green: #244334;
+
+            --white: #ffffff;
+
+            --shadow:
+                0 18px 50px
+                rgba(48, 43, 34, 0.10);
+
+            --radius: 24px;
+
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            margin: 0;
+
+            background:
+                var(--cream);
+
+            color:
+                var(--ink);
+
+            font-family:
+                "Manrope",
+                Arial,
+                sans-serif;
+
+            line-height: 1.7;
+
+        }
+
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+
+        }
+
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit;
+
+        }
+
+
+        /* =====================================================
+           ESTRUTURA
+        ===================================================== */
+
+        .container {
+
+            width:
+                min(
+                    1160px,
+                    calc(100% - 48px)
+                );
+
+            margin:
+                auto;
+
+        }
+
+
+        .section {
+
+            padding:
+                105px 0;
+
+        }
+
+
+        .center {
+
+            text-align:
+                center;
+
+        }
+
+
+        /* =====================================================
+           TEXTOS
+        ===================================================== */
+
+        .eyebrow {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                8px;
+
+            color:
+                var(--gold-dark);
+
+            font-size:
+                0.76rem;
+
+            font-weight:
+                700;
+
+            letter-spacing:
+                0.16em;
+
+        }
+
+
+        .eyebrow::before {
+
+            content:
+                "";
+
+            width:
+                28px;
+
+            height:
+                1px;
+
+            background:
+                var(--gold-dark);
+
+        }
+
+
+        h1,
+        h2,
+        h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            line-height:
+                1.03;
+
+            margin:
+                0 0 20px;
+
+        }
+
+
+        h1 {
+
+            font-size:
+                clamp(
+                    3.3rem,
+                    6vw,
+                    5.8rem
+                );
+
+            font-weight:
+                600;
+
+            letter-spacing:
+                -0.04em;
+
+        }
+
+
+        h2 {
+
+            font-size:
+                clamp(
+                    2.5rem,
+                    4vw,
+                    4rem
+                );
+
+            font-weight:
+                600;
+
+            letter-spacing:
+                -0.03em;
+
+        }
+
+
+        h3 {
+
+            font-size:
+                2rem;
+
+        }
+
+
+        p {
+
+            color:
+                var(--muted);
+
+            margin:
+                0 0 18px;
+
+        }
+
+
+        /* =====================================================
+           BOTÕES
+        ===================================================== */
+
+        .btn {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                10px;
+
+            border-radius:
+                999px;
+
+            padding:
+                16px 24px;
+
+            font-size:
+                0.92rem;
+
+            font-weight:
+                700;
+
+            transition:
+                0.25s;
+
+            cursor:
+                pointer;
+
+            border:
+                1px solid transparent;
+
+        }
+
+
+        .btn-primary {
+
+            background:
+                var(--gold);
+
+            color:
+                var(--ink);
+
+        }
+
+
+        .btn-primary:hover {
+
+            background:
+                var(--gold-dark);
+
+            color:
+                white;
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .btn-dark {
+
+            background:
+                var(--ink);
+
+            color:
+                white;
+
+        }
+
+
+        .btn-dark:hover {
+
+            background:
+                var(--green);
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .btn-outline {
+
+            border-color:
+                rgba(
+                    48,
+                    43,
+                    34,
+                    0.18
+                );
+
+            background:
+                white;
+
+        }
+
+
+        .btn-outline:hover {
+
+            border-color:
+                var(--gold-dark);
+
+        }
+
+
+        /* =====================================================
+           CABEÇALHO
+        ===================================================== */
+
+        .header {
+
+            position:
+                fixed;
+
+            inset:
+                0 0 auto;
+
+            z-index:
+                50;
+
+            background:
+                rgba(
+                    250,
+                    248,
+                    242,
+                    0.88
+                );
+
+            backdrop-filter:
+                blur(14px);
+
+            border-bottom:
+                1px solid
+                rgba(
+                    48,
+                    43,
+                    34,
+                    0.07
+                );
+
+        }
+
+
+        .nav {
+
+            height:
+                82px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                25px;
+
+        }
+
+
+        .brand {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                1.5rem;
+
+            font-weight:
+                700;
+
+        }
+
+
+        /* =====================================================
+           LOGO
+        ===================================================== */
+
+        .brand-logo {
+
+            width:
+                58px;
+
+            height:
+                58px;
+
+            object-fit:
+                contain;
+
+            flex:
+                0 0 auto;
+
+        }
+
+
+        .nav-links {
+
+            display:
+                flex;
+
+            gap:
+                22px;
+
+            font-size:
+                0.82rem;
+
+            font-weight:
+                700;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color:
+                var(--gold-dark);
+
+        }
+
+
+        .menu-btn {
+
+            display:
+                none;
+
+            background:
+                none;
+
+            border:
+                0;
+
+            font-size:
+                1.6rem;
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            padding:
+                155px 0 70px;
+
+            min-height:
+                820px;
+
+            display:
+                grid;
+
+            align-items:
+                center;
+
+            overflow:
+                hidden;
+
+            background:
+
+                radial-gradient(
+
+                    circle at 85% 20%,
+
+                    rgba(
+                        222,
+                        198,
+                        124,
+                        0.25
+                    ),
+
+                    transparent 30%
+
+                ),
+
+                var(--cream);
+
+        }
+
+
+        .hero-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.05fr
+                0.95fr;
+
+            gap:
+                65px;
+
+            align-items:
+                center;
+
+        }
+
+
+        .hero-copy p {
+
+            font-size:
+                1.06rem;
+
+            max-width:
+                620px;
+
+        }
+
+
+        .hero-actions {
+
+            display:
+                flex;
+
+            gap:
+                12px;
+
+            flex-wrap:
+                wrap;
+
+            margin:
+                28px 0;
+
+        }
+
+
+        .rating {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                10px;
+
+            font-size:
+                0.88rem;
+
+            font-weight:
+                700;
+
+        }
+
+
+        .stars {
+
+            color:
+                var(--gold-dark);
+
+            letter-spacing:
+                2px;
+
+        }
+
+
+        .hero-image {
+
+            position:
+                relative;
+
+        }
+
+
+        .hero-image img {
+
+            width:
+                100%;
+
+            height:
+                610px;
+
+            object-fit:
+                cover;
+
+            object-position:
+                center 35%;
+
+            border-radius:
+                42%
+                42%
+                18px
+                18px;
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+
+        .hero-image::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            inset:
+                35px
+                -25px
+                -25px
+                35px;
+
+            border:
+                1px solid
+                var(--gold);
+
+            border-radius:
+                42%
+                42%
+                18px
+                18px;
+
+            z-index:
+                -1;
+
+        }
+
+
+        /* =====================================================
+           BARRA DE CONFIANÇA
+        ===================================================== */
+
+        .trust {
+
+            padding:
+                27px 0;
+
+            background:
+                var(--beige);
+
+        }
+
+
+        .trust-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    4,
+                    1fr
+                );
+
+            gap:
+                20px;
+
+        }
+
+
+        .trust-item {
+
+            text-align:
+                center;
+
+            font-weight:
+                700;
+
+            font-size:
+                0.86rem;
+
+        }
+
+
+        /* =====================================================
+           SOBRE
+        ===================================================== */
+
+        .split {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                0.9fr
+                1.1fr;
+
+            gap:
+                85px;
+
+            align-items:
+                center;
+
+        }
+
+
+        .photo-frame {
+
+            position:
+                relative;
+
+        }
+
+
+        .photo-frame img {
+
+            height:
+                610px;
+
+            width:
+                100%;
+
+            object-fit:
+                cover;
+
+            object-position:
+                center 35%;
+
+            border-radius:
+                20px;
+
+        }
+
+
+        .photo-frame::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                130px;
+
+            height:
+                130px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(
+                    222,
+                    198,
+                    124,
+                    0.45
+                );
+
+            right:
+                -35px;
+
+            bottom:
+                -35px;
+
+            z-index:
+                -1;
+
+        }
+
+
+        /* =====================================================
+           SERVIÇOS
+        ===================================================== */
+
+        .services {
+
+            background:
+                white;
+
+        }
+
+
+        .section-head {
+
+            max-width:
+                760px;
+
+            margin-bottom:
+                48px;
+
+        }
+
+
+        .service-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                20px;
+
+        }
+
+
+        .card {
+
+            background:
+                var(--cream);
+
+            border:
+                1px solid
+                rgba(
+                    48,
+                    43,
+                    34,
+                    0.07
+                );
+
+            padding:
+                30px;
+
+            border-radius:
+                var(--radius);
+
+            transition:
+                0.25s;
+
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+
+        .icon {
+
+            width:
+                48px;
+
+            height:
+                48px;
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(
+                    222,
+                    198,
+                    124,
+                    0.32
+                );
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            font-size:
+                1.35rem;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .card ul {
+
+            padding-left:
+                18px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                0.87rem;
+
+        }
+
+
+        .link {
+
+            font-weight:
+                700;
+
+            color:
+                var(--gold-dark);
+
+            font-size:
+                0.88rem;
+
+        }
+
+
+        /* =====================================================
+           DIFERENCIAIS
+        ===================================================== */
+
+        .diff {
+
+            background:
+                var(--beige);
+
+        }
+
+
+        .diff-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    5,
+                    1fr
+                );
+
+            gap:
+                16px;
+
+        }
+
+
+        .diff-card {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.65
+                );
+
+            padding:
+                25px;
+
+            border-radius:
+                20px;
+
+        }
+
+
+        /* =====================================================
+           PASSOS
+        ===================================================== */
+
+        .steps {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    4,
+                    1fr
+                );
+
+            gap:
+                25px;
+
+        }
+
+
+        .step-num {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                4rem;
+
+            color:
+                var(--gold);
+
+            line-height:
+                1;
+
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta {
+
+            background:
+                var(--ink);
+
+            color:
+                white;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+        }
+
+
+        .cta::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                500px;
+
+            height:
+                500px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(
+                    222,
+                    198,
+                    124,
+                    0.12
+                );
+
+            right:
+                -180px;
+
+            top:
+                -260px;
+
+        }
+
+
+        .cta .container {
+
+            position:
+                relative;
+
+        }
+
+
+        .cta p {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.72
+                );
+
+            max-width:
+                620px;
+
+            margin-inline:
+                auto;
+
+        }
+
+
+        /* =====================================================
+           AVALIAÇÕES
+        ===================================================== */
+
+        .reviews {
+
+            background:
+                white;
+
+        }
+
+
+        .review-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                20px;
+
+        }
+
+
+        .review {
+
+            padding:
+                30px;
+
+            border:
+                1px solid
+                rgba(
+                    48,
+                    43,
+                    34,
+                    0.08
+                );
+
+            border-radius:
+                20px;
+
+        }
+
+
+        .quote {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                4rem;
+
+            color:
+                var(--gold);
+
+            line-height:
+                0.5;
+
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        .faq-wrap {
+
+            max-width:
+                850px;
+
+            margin:
+                auto;
+
+        }
+
+
+        .faq {
+
+            background:
+                white;
+
+            border:
+                1px solid
+                rgba(
+                    48,
+                    43,
+                    34,
+                    0.08
+                );
+
+            border-radius:
+                16px;
+
+            margin-bottom:
+                12px;
+
+        }
+
+
+        .faq button {
+
+            width:
+                100%;
+
+            text-align:
+                left;
+
+            background:
+                none;
+
+            border:
+                0;
+
+            padding:
+                21px 24px;
+
+            font:
+                700
+                0.92rem
+                Manrope;
+
+            color:
+                var(--ink);
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            cursor:
+                pointer;
+
+        }
+
+
+        .faq p {
+
+            display:
+                none;
+
+            padding:
+                0
+                24px
+                20px;
+
+            margin:
+                0;
+
+        }
+
+
+        .faq.active p {
+
+            display:
+                block;
+
+        }
+
+
+        /* =====================================================
+           CONTATO
+        ===================================================== */
+
+        .contact {
+
+            background:
+                var(--beige);
+
+        }
+
+
+        .contact-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                0.85fr
+                1.15fr;
+
+            gap:
+                55px;
+
+        }
+
+
+        .contact-box {
+
+            background:
+                white;
+
+            padding:
+                34px;
+
+            border-radius:
+                24px;
+
+        }
+
+
+        .contact-list {
+
+            list-style:
+                none;
+
+            padding:
+                0;
+
+            margin:
+                25px 0;
+
+        }
+
+
+        .contact-list li {
+
+            padding:
+                12px 0;
+
+            border-bottom:
+                1px solid
+                rgba(
+                    48,
+                    43,
+                    34,
+                    0.08
+                );
+
+        }
+
+
+        .map {
+
+            min-height:
+                470px;
+
+            border:
+                0;
+
+            border-radius:
+                24px;
+
+            width:
+                100%;
+
+            background:
+                #ddd;
+
+        }
+
+
+        /* =====================================================
+           RODAPÉ
+        ===================================================== */
+
+        .footer {
+
+            background:
+                var(--green);
+
+            color:
+                white;
+
+            padding:
+                60px 0 25px;
+
+        }
+
+
+        .footer p {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.65
+                );
+
+        }
+
+
+        .footer-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.4fr
+                1fr
+                1fr;
+
+            gap:
+                40px;
+
+        }
+
+
+        .footer a {
+
+            display:
+                block;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.72
+                );
+
+            margin:
+                9px 0;
+
+            font-size:
+                0.88rem;
+
+        }
+
+
+        .copyright {
+
+            border-top:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.12
+                );
+
+            margin-top:
+                40px;
+
+            padding-top:
+                20px;
+
+            font-size:
+                0.78rem;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.55
+                );
+
+        }
+
+
+        /* =====================================================
+           WHATSAPP FLUTUANTE
+        ===================================================== */
+
+        .whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #25D366;
+    color: #ffffff;
+
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.22),
+        0 0 0 0 rgba(37, 211, 102, 0.45);
+
+    z-index: 45;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.whatsapp:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25),
+        0 0 0 8px rgba(37, 211, 102, 0.12);
+}
+
+.whatsapp svg {
+    width: 31px;
+    height: 31px;
+
+    display: block;
+    fill: currentColor;
+}
+
+@media (max-width: 600px) {
+    .whatsapp {
+        width: 56px;
+        height: 56px;
+
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .whatsapp svg {
+        width: 29px;
+        height: 29px;
+    }
+}
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (
+            max-width:
+            900px
+        ) {
+
+            .nav-links,
+            .nav > .btn {
+
+                display:
+                    none;
+
+            }
+
+
+            .menu-btn {
+
+                display:
+                    block;
+
+            }
+
+
+            .nav-links.open {
+
+                display:
+                    flex;
+
+                position:
+                    absolute;
+
+                top:
+                    82px;
+
+                left:
+                    0;
+
+                right:
+                    0;
+
+                flex-direction:
+                    column;
+
+                background:
+                    var(--cream);
+
+                padding:
+                    25px;
+
+                box-shadow:
+                    var(--shadow);
+
+            }
+
+
+            .hero {
+
+                padding-top:
+                    125px;
+
+                min-height:
+                    auto;
+
+            }
+
+
+            .hero-grid,
+            .split,
+            .contact-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    42px;
+
+            }
+
+
+            .hero-image {
+
+                order:
+                    2;
+
+            }
+
+
+            .hero-image img {
+
+                height:
+                    480px;
+
+            }
+
+
+            .trust-grid {
+
+                grid-template-columns:
+                    repeat(
+                        2,
+                        1fr
+                    );
+
+            }
+
+
+            .service-grid {
+
+                grid-template-columns:
+                    1fr
+                    1fr;
+
+            }
+
+
+            .diff-grid {
+
+                grid-template-columns:
+                    1fr
+                    1fr;
+
+            }
+
+
+            .steps {
+
+                grid-template-columns:
+                    1fr
+                    1fr;
+
+            }
+
+
+            .review-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .footer-grid {
+
+                grid-template-columns:
+                    1fr
+                    1fr;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           CELULAR
+        ===================================================== */
+
+        @media (
+            max-width:
+            600px
+        ) {
+
+            .container {
+
+                width:
+                    min(
+                        calc(100% - 40px),
+                        1160px
+                    );
+
+            }
+
+
+            .section {
+
+                padding:
+                    68px 0;
+
+            }
+
+
+            h1 {
+
+                font-size:
+                    3.35rem;
+
+            }
+
+
+            .brand span {
+
+                font-size:
+                    1.25rem;
+
+            }
+
+
+            .brand-logo {
+
+                width:
+                    48px;
+
+                height:
+                    48px;
+
+            }
+
+
+            .hero-actions {
+
+                flex-direction:
+                    column;
+
+            }
+
+
+            .hero-actions .btn {
+
+                width:
+                    100%;
+
+            }
+
+
+            .hero-image img {
+
+                height:
+                    430px;
+
+                border-radius:
+                    34%
+                    34%
+                    14px
+                    14px;
+
+            }
+
+
+            .hero-image::before {
+
+                inset:
+                    20px
+                    -10px
+                    -10px
+                    20px;
+
+            }
+
+
+            .trust-grid,
+            .service-grid,
+            .diff-grid,
+            .steps,
+            .footer-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .trust-item {
+
+                padding:
+                    7px;
+
+            }
+
+
+            .photo-frame img {
+
+                height:
+                    440px;
+
+            }
+
+
+            .section-head {
+
+                margin-bottom:
+                    32px;
+
+            }
+
+
+            .contact-grid {
+
+                gap:
+                    25px;
+
+            }
+
+
+            .map {
+
+                min-height:
+                    350px;
+
+            }
+
+
+            .footer-grid {
+
+                gap:
+                    20px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     CABEÇALHO
+===================================================== -->
+
+<header class="header">
+
+    <nav class="nav container">
+
+        <a
+            class="brand"
+            href="#inicio"
+        >
+
+            <img
+                class="brand-logo"
+                src="images/logo studio leticia.png"
+                alt="Logo do Studio Letícia Vieira Estética e Saúde"
+            >
+
+            <span>
+                Studio Letícia Vieira
+            </span>
+
+        </a>
+
+
+        <div
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a href="#sobre">
+                Sobre
+            </a>
+
+            <a href="#servicos">
+                Serviços
+            </a>
+
+            <a href="#diferenciais">
+                Diferenciais
+            </a>
+
+            <a href="#avaliacoes">
+                Avaliações
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+            <a href="#contato">
+                Contato
+            </a>
+
+        </div>
+
+
+        <a
+            class="btn btn-primary"
+            href="https://wa.me/55SEUNUMERO?text=Olá!%20Encontrei%20o%20site%20do%20Studio%20Letícia%20Vieira%20e%20gostaria%20de%20consultar%20os%20horários."
+            target="_blank"
+        >
+
+            Agendar pelo WhatsApp
+
+        </a>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Abrir menu"
+        >
+
+            ☰
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="inicio"
+>
+
+    <div
+        class="container hero-grid"
+    >
+
+
+        <div class="hero-copy">
+
+
+            <span class="eyebrow">
+
+                ESTÉTICA • SAÚDE • BEM-ESTAR
+
+            </span>
+
+
+            <h1>
+
+                Cuidado, beleza e bem-estar
+                em cada detalhe
+
+            </h1>
+
+
+            <p>
+
+                Um espaço completo para cuidar de você,
+                com atendimento personalizado,
+                profissionais capacitadas e diferentes
+                serviços de estética e bem-estar
+                em Campo Limpo Paulista.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+
+                <a
+                    class="btn btn-primary"
+                    href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento."
+                    target="_blank"
+                >
+
+                    Agendar pelo WhatsApp
+
+                </a>
+
+
+                <a
+                    class="btn btn-outline"
+                    href="#servicos"
+                >
+
+                    Conhecer os serviços
+
+                </a>
+
+
+            </div>
+
+
+            <div class="rating">
+
+                <span class="stars">
+
+                    ★★★★★
+
+                </span>
+
+
+                <span>
+
+                    5,0 no Google • 47 avaliações
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="images/studio leticia.jpg"
+                alt="Ambiente do Studio Letícia Vieira Estética e Saúde"
+            >
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONFIANÇA
+===================================================== -->
+
+<section class="trust">
+
+    <div class="container trust-grid">
+
+        <div class="trust-item">
+
+            ✦ Atendimento personalizado
+
+        </div>
+
+
+        <div class="trust-item">
+
+            ✦ Ambiente acolhedor
+
+        </div>
+
+
+        <div class="trust-item">
+
+            ✦ Profissionais capacitadas
+
+        </div>
+
+
+        <div class="trust-item">
+
+            ✦ Diversos serviços em um só espaço
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SOBRE
+===================================================== -->
+
+<section
+    class="section"
+    id="sobre"
+>
+
+    <div class="container split">
+
+
+        <div class="photo-frame">
+
+            <img
+                src="images/studio leticia.jpg"
+                alt="Espaço interno do Studio Letícia Vieira"
+            >
+
+        </div>
+
+
+        <div>
+
+
+            <span class="eyebrow">
+
+                SOBRE O STUDIO
+
+            </span>
+
+
+            <h2>
+
+                Um espaço completo
+                para cuidar da sua beleza
+                e do seu bem-estar
+
+            </h2>
+
+
+            <p>
+
+                No Studio Letícia Vieira
+                Estética e Saúde,
+                acreditamos que cuidar de si
+                é também reservar um momento
+                para se sentir bem,
+                fortalecer a autoestima
+                e valorizar a sua beleza
+                de forma natural
+                e personalizada.
+
+            </p>
+
+
+            <p>
+
+                Nosso espaço reúne diferentes
+                serviços de estética,
+                saúde e bem-estar
+                em um ambiente preparado
+                para receber cada cliente
+                com atenção
+                e profissionalismo.
+
+            </p>
+
+
+            <p>
+
+                Valorizamos a escuta,
+                o diálogo e o cuidado
+                em cada etapa.
+
+                Buscamos compreender
+                o que você procura,
+                esclarecer dúvidas
+                e apresentar as opções disponíveis
+                de maneira clara
+                e responsável.
+
+            </p>
+
+
+            <a
+                class="btn btn-dark"
+                href="#servicos"
+            >
+
+                Conheça nossos serviços
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVIÇOS
+===================================================== -->
+
+<section
+    class="section services"
+    id="servicos"
+>
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+
+            <span class="eyebrow">
+
+                SERVIÇOS
+
+            </span>
+
+
+            <h2>
+
+                Cuidados para diferentes
+                momentos e necessidades
+
+            </h2>
+
+
+            <p>
+
+                Conheça algumas das áreas
+                de atendimento do Studio.
+
+                Para informações sobre
+                indicações,
+                disponibilidade e valores,
+                fale com nossa equipe.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <article class="card">
+
+                <div class="icon">
+
+                    ✦
+
+                </div>
+
+
+                <h3>
+
+                    Estética facial
+
+                </h3>
+
+
+                <p>
+
+                    Cuidados voltados
+                    às diferentes necessidades
+                    da pele,
+                    sempre conforme a avaliação
+                    e as orientações da equipe.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Cuidados com a pele
+                    </li>
+
+                    <li>
+                        Microagulhamento e peelings
+                    </li>
+
+                    <li>
+                        Tratamentos para acne e melasma
+                    </li>
+
+                    <li>
+                        Bioestimulador, Botox e fios de PDO
+                    </li>
+
+                </ul>
+
+
+                <a
+                    class="link"
+                    href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20saber%20mais%20sobre%20estética%20facial."
+                    target="_blank"
+                >
+
+                    Consultar pelo WhatsApp →
+
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">
+
+                    ◌
+
+                </div>
+
+
+                <h3>
+
+                    Sobrancelhas e cílios
+
+                </h3>
+
+
+                <p>
+
+                    Atendimentos pensados
+                    para valorizar a expressão
+                    e respeitar as características
+                    e preferências
+                    de cada cliente.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Design de sobrancelhas
+                    </li>
+
+                    <li>
+                        Reconstrução TAS
+                    </li>
+
+                    <li>
+                        Despigmentação
+                    </li>
+
+                    <li>
+                        Alongamento e extensão de cílios
+                    </li>
+
+                </ul>
+
+
+                <a
+                    class="link"
+                    href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20saber%20mais%20sobre%20sobrancelhas%20e%20cílios."
+                    target="_blank"
+                >
+
+                    Consultar pelo WhatsApp →
+
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">
+
+                    ◇
+
+                </div>
+
+
+                <h3>
+
+                    Estética corporal
+
+                </h3>
+
+
+                <p>
+
+                    Protocolos e tecnologias
+                    voltados aos cuidados corporais,
+                    apresentados de acordo
+                    com cada atendimento.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Heccus Turbo
+                    </li>
+
+                    <li>
+                        Intradermoterapia pressurizada
+                    </li>
+
+                    <li>
+                        Cuidados para estrias
+                    </li>
+
+                    <li>
+                        Secagem de vasinhos
+                    </li>
+
+                </ul>
+
+
+                <a
+                    class="link"
+                    href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20saber%20mais%20sobre%20estética%20corporal."
+                    target="_blank"
+                >
+
+                    Consultar pelo WhatsApp →
+
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">
+
+                    ≈
+
+                </div>
+
+
+                <h3>
+
+                    Massagens e bem-estar
+
+                </h3>
+
+
+                <p>
+
+                    Momentos de cuidado
+                    voltados ao relaxamento,
+                    conforto e bem-estar.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Massagens relaxantes
+                    </li>
+
+                    <li>
+                        Massagens modeladoras
+                    </li>
+
+                    <li>
+                        Atendimentos personalizados
+                    </li>
+
+                </ul>
+
+
+                <a
+                    class="link"
+                    href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20saber%20mais%20sobre%20as%20massagens."
+                    target="_blank"
+                >
+
+                    Consultar pelo WhatsApp →
+
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">
+
+                    ✿
+
+                </div>
+
+
+                <h3>
+
+                    Beleza e cuidados pessoais
+
+                </h3>
+
+
+                <p>
+
+                    Serviços para complementar
+                    sua rotina de beleza
+                    e autocuidado.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Manicure e pedicure
+                    </li>
+
+                    <li>
+                        Maquiagem
+                    </li>
+
+                    <li>
+                        Depilação com cera
+                    </li>
+
+                    <li>
+                        Depilação facial egípcia
+                    </li>
+
+                </ul>
+
+
+                <a
+                    class="link"
+                    href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20serviços%20de%20beleza."
+                    target="_blank"
+                >
+
+                    Consultar pelo WhatsApp →
+
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">
+
+                    ?
+
+                </div>
+
+
+                <h3>
+
+                    Não sabe qual escolher?
+
+                </h3>
+
+
+                <p>
+
+                    Conte o que você procura.
+
+                    A equipe poderá apresentar
+                    as opções disponíveis
+                    e orientar
+                    sobre o agendamento.
+
+                </p>
+
+
+                <br>
+
+
+                <a
+                    class="btn btn-primary"
+                    href="https://wa.me/55SEUNUMERO?text=Olá!%20Tenho%20uma%20dúvida%20e%20gostaria%20de%20uma%20orientação."
+                    target="_blank"
+                >
+
+                    Falar com a equipe
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DIFERENCIAIS
+===================================================== -->
+
+<section
+    class="section diff"
+    id="diferenciais"
+>
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+
+            <span class="eyebrow">
+
+                DIFERENCIAIS
+
+            </span>
+
+
+            <h2>
+
+                Mais cuidado
+                em cada etapa
+                do seu atendimento
+
+            </h2>
+
+
+            <p>
+
+                Escolher um espaço de estética
+                também envolve confiança,
+                acolhimento
+                e a segurança
+                de ser atendida
+                por profissionais preparadas.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="diff-grid">
+
+
+            <div class="diff-card">
+
+                <div class="icon">
+
+                    01
+
+                </div>
+
+
+                <h3>
+
+                    Atendimento personalizado
+
+                </h3>
+
+
+                <p>
+
+                    Cada atendimento considera
+                    necessidades,
+                    preferências
+                    e objetivos apresentados.
+
+                </p>
+
+            </div>
+
+
+            <div class="diff-card">
+
+                <div class="icon">
+
+                    02
+
+                </div>
+
+
+                <h3>
+
+                    Equipe atenciosa
+
+                </h3>
+
+
+                <p>
+
+                    Profissionais preparadas
+                    para receber,
+                    orientar
+                    e tornar a experiência
+                    mais confortável.
+
+                </p>
+
+            </div>
+
+
+            <div class="diff-card">
+
+                <div class="icon">
+
+                    03
+
+                </div>
+
+
+                <h3>
+
+                    Ambiente acolhedor
+
+                </h3>
+
+
+                <p>
+
+                    Um espaço organizado
+                    e pensado
+                    para proporcionar
+                    bem-estar
+                    e tranquilidade.
+
+                </p>
+
+            </div>
+
+
+            <div class="diff-card">
+
+                <div class="icon">
+
+                    04
+
+                </div>
+
+
+                <h3>
+
+                    Diversidade de serviços
+
+                </h3>
+
+
+                <p>
+
+                    Diferentes opções
+                    de estética,
+                    beleza
+                    e bem-estar
+                    reunidas
+                    em um só lugar.
+
+                </p>
+
+            </div>
+
+
+            <div class="diff-card">
+
+                <div class="icon">
+
+                    05
+
+                </div>
+
+
+                <h3>
+
+                    Cuidado profissional
+
+                </h3>
+
+
+                <p>
+
+                    Atenção às boas práticas
+                    e às orientações adequadas
+                    para cada serviço.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AGENDAMENTO
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+
+            <span class="eyebrow">
+
+                AGENDAMENTO
+
+            </span>
+
+
+            <h2>
+
+                Agendar é simples
+
+            </h2>
+
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div>
+
+                <div class="step-num">
+
+                    01
+
+                </div>
+
+
+                <h3>
+
+                    Entre em contato
+
+                </h3>
+
+
+                <p>
+
+                    Clique no WhatsApp
+                    e envie uma mensagem.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <div class="step-num">
+
+                    02
+
+                </div>
+
+
+                <h3>
+
+                    Conte o que procura
+
+                </h3>
+
+
+                <p>
+
+                    Informe o serviço desejado
+                    ou explique sua necessidade.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <div class="step-num">
+
+                    03
+
+                </div>
+
+
+                <h3>
+
+                    Consulte a disponibilidade
+
+                </h3>
+
+
+                <p>
+
+                    Verifique os dias
+                    e horários disponíveis.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <div class="step-num">
+
+                    04
+
+                </div>
+
+
+                <h3>
+
+                    Confirme o atendimento
+
+                </h3>
+
+
+                <p>
+
+                    Receba as orientações necessárias
+                    e finalize seu agendamento.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <br>
+
+
+        <a
+            class="btn btn-dark"
+            href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20consultar%20os%20horários%20disponíveis."
+            target="_blank"
+        >
+
+            Consultar horários
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="section cta">
+
+    <div class="container center">
+
+
+        <span
+            class="eyebrow"
+            style="color:var(--gold)"
+        >
+
+            ATENDIMENTO
+
+        </span>
+
+
+        <h2>
+
+            Seu momento de cuidado
+            pode começar agora
+
+        </h2>
+
+
+        <p>
+
+            Fale com nossa equipe,
+            tire suas dúvidas
+            e consulte
+            os horários disponíveis.
+
+        </p>
+
+
+        <br>
+
+
+        <a
+            class="btn btn-primary"
+            href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento."
+            target="_blank"
+        >
+
+            Agendar pelo WhatsApp
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AVALIAÇÕES
+===================================================== -->
+
+<section
+    class="section reviews"
+    id="avaliacoes"
+>
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+
+            <span class="eyebrow">
+
+                AVALIAÇÕES
+
+            </span>
+
+
+            <h2>
+
+                Quem conhece o Studio
+                compartilha sua experiência
+
+            </h2>
+
+
+            <p>
+
+                A confiança é construída
+                no atendimento,
+                na atenção aos detalhes
+                e na forma
+                como cada cliente
+                é recebida.
+
+            </p>
+
+
+            <div class="rating">
+
+                <span class="stars">
+
+                    ★★★★★
+
+                </span>
+
+
+                <span>
+
+                    5,0 no Google • 47 avaliações
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="review-grid">
+
+
+            <article class="review">
+
+
+                <div class="quote">
+
+                    “
+
+                </div>
+
+
+                <p>
+
+                    Lugar aconchegante,
+                    acolhedor,
+                    funcionárias atenciosas,
+                    ótimas profissionais!
+
+                </p>
+
+
+                <strong>
+
+                    Avaliação do Google
+
+                </strong>
+
+
+            </article>
+
+
+            <article class="review">
+
+
+                <div class="quote">
+
+                    “
+
+                </div>
+
+
+                <p>
+
+                    Variedade em procedimentos
+                    e as profissionais
+                    são maravilhosas.
+
+                </p>
+
+
+                <strong>
+
+                    Avaliação do Google
+
+                </strong>
+
+
+            </article>
+
+
+            <article class="review">
+
+
+                <div class="quote">
+
+                    “
+
+                </div>
+
+
+                <p>
+
+                    Estrutura ótima
+                    e funcionários
+                    extremamente capacitados.
+
+                </p>
+
+
+                <strong>
+
+                    Avaliação do Google
+
+                </strong>
+
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section
+    class="section"
+    id="faq"
+>
+
+    <div class="container">
+
+
+        <div
+            class="section-head center"
+            style="margin-inline:auto"
+        >
+
+
+            <span class="eyebrow">
+
+                FAQ
+
+            </span>
+
+
+            <h2>
+
+                Tire suas dúvidas
+
+            </h2>
+
+
+            <p>
+
+                Encontre respostas rápidas
+                ou fale diretamente
+                com a equipe.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="faq-wrap">
+
+
+            <div class="faq">
+
+                <button>
+
+                    Como faço para agendar?
+
+                    <span>
+
+                        +
+
+                    </span>
+
+                </button>
+
+
+                <p>
+
+                    Entre em contato
+                    pelo WhatsApp,
+                    informe o serviço
+                    que procura
+                    e consulte
+                    os horários disponíveis.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button>
+
+                    Preciso saber
+                    qual serviço escolher?
+
+                    <span>
+
+                        +
+
+                    </span>
+
+                </button>
+
+
+                <p>
+
+                    Não.
+
+                    Você pode explicar
+                    o que procura
+                    ou quais são suas dúvidas.
+
+                    A equipe apresentará
+                    as opções disponíveis.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button>
+
+                    É necessário
+                    agendar com antecedência?
+
+                    <span>
+
+                        +
+
+                    </span>
+
+                </button>
+
+
+                <p>
+
+                    Recomendamos
+                    o contato antecipado
+                    para consultar
+                    a disponibilidade
+                    e encontrar
+                    um horário adequado.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button>
+
+                    Quanto tempo
+                    dura o atendimento?
+
+                    <span>
+
+                        +
+
+                    </span>
+
+                </button>
+
+
+                <p>
+
+                    O tempo pode variar
+                    conforme o serviço escolhido.
+
+                    Essa informação
+                    pode ser confirmada
+                    durante o contato.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button>
+
+                    Quais formas
+                    de pagamento
+                    são aceitas?
+
+                    <span>
+
+                        +
+
+                    </span>
+
+                </button>
+
+
+                <p>
+
+                    As formas de pagamento
+                    podem ser consultadas
+                    diretamente
+                    pelo WhatsApp.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button>
+
+                    Onde fica o Studio?
+
+                    <span>
+
+                        +
+
+                    </span>
+
+                </button>
+
+
+                <p>
+
+                    Av. Pres. Vargas, 147 —
+                    Vila Tavares,
+                    Campo Limpo Paulista — SP,
+                    CEP 13230-100.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+
+<section
+    class="section contact"
+    id="contato"
+>
+
+    <div class="container contact-grid">
+
+
+        <div class="contact-box">
+
+
+            <span class="eyebrow">
+
+                CONTATO
+
+            </span>
+
+
+            <h2>
+
+                Visite o Studio
+
+            </h2>
+
+
+            <p>
+
+                Estamos em Campo Limpo Paulista.
+
+                Entre em contato
+                para tirar dúvidas
+                e consultar
+                a disponibilidade.
+
+            </p>
+
+
+            <ul class="contact-list">
+
+
+                <li>
+
+                    <strong>
+
+                        Endereço
+
+                    </strong>
+
+                    <br>
+
+                    Av. Pres. Vargas, 147 —
+                    Vila Tavares
+
+                    <br>
+
+                    Campo Limpo Paulista — SP
+
+                    <br>
+
+                    13230-100
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+
+                        Horários
+
+                    </strong>
+
+                    <br>
+
+                    Terça a sexta:
+                    09h às 20h
+
+                    <br>
+
+                    Sábado:
+                    08h às 18h
+
+                    <br>
+
+                    Segunda e domingo:
+                    fechado
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+
+                        Instagram
+
+                    </strong>
+
+                    <br>
+
+                    @studio.leticiavieira
+
+                </li>
+
+
+            </ul>
+
+
+            <a
+                class="btn btn-dark"
+                href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20falar%20com%20o%20Studio."
+                target="_blank"
+            >
+
+                Falar no WhatsApp
+
+            </a>
+
+
+        </div>
+
+
+        <iframe
+            class="map"
+            title="Mapa do Studio Letícia Vieira"
+            loading="lazy"
+            src="https://www.google.com/maps?q=Av.%20Pres.%20Vargas,%20147,%20Campo%20Limpo%20Paulista,%20SP&output=embed"
+        >
+        </iframe>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     RODAPÉ
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div>
+
+
+                <div class="brand">
+
+
+                    <img
+                        class="brand-logo"
+                        src="images/logo studio leticia.png"
+                        alt="Logo do Studio Letícia Vieira"
+                    >
+
+
+                    <span>
+
+                        Studio Letícia Vieira
+
+                    </span>
+
+
+                </div>
+
+
+                <p>
+
+                    Um espaço completo
+                    para cuidar
+                    da sua beleza
+                    e bem-estar.
+
+                </p>
+
+
+            </div>
+
+
+            <div>
+
+
+                <strong>
+
+                    Navegação
+
+                </strong>
+
+
+                <a href="#sobre">
+
+                    Sobre
+
+                </a>
+
+
+                <a href="#servicos">
+
+                    Serviços
+
+                </a>
+
+
+                <a href="#diferenciais">
+
+                    Diferenciais
+
+                </a>
+
+
+                <a href="#faq">
+
+                    FAQ
+
+                </a>
+
+
+            </div>
+
+
+            <div>
+
+
+                <strong>
+
+                    Contato
+
+                </strong>
+
+
+                <a href="#contato">
+
+                    Como chegar
+
+                </a>
+
+
+                <a
+                    href="https://instagram.com/studio.leticiavieira"
+                    target="_blank"
+                >
+
+                    @studio.leticiavieira
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/55SEUNUMERO"
+                    target="_blank"
+                >
+
+                    WhatsApp
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026
+            Studio Letícia Vieira
+            Estética e Saúde.
+
+            Todos os direitos reservados.
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     WHATSAPP FLUTUANTE
+===================================================== -->
+
+<a 
+    class="whatsapp" 
+    href="https://wa.me/55SEUNUMERO?text=Olá!%20Encontrei%20o%20site%20do%20Studio%20Letícia%20Vieira." 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Falar pelo WhatsApp"
+>
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 32 32" 
+        width="30" 
+        height="30"
+        aria-hidden="true"
+    >
+        <path 
+            fill="currentColor" 
+            d="M16.03 3C8.85 3 3 8.84 3 16.02c0 2.29.6 4.52 1.74 6.48L3 29l6.67-1.71a12.94 12.94 0 0 0 6.35 1.66h.01c7.18 0 13.02-5.84 13.02-13.02C29.05 8.84 23.21 3 16.03 3Zm0 23.79h-.01a10.78 10.78 0 0 1-5.5-1.5l-.39-.23-3.96 1.02 1.06-3.86-.25-.4a10.77 10.77 0 1 1 9.05 4.97Zm5.91-8.08c-.32-.16-1.88-.93-2.17-1.04-.29-.11-.5-.16-.71.16-.21.32-.82 1.04-1 1.25-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.88-1.77-2.2-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66s1.15 3.08 1.31 3.3c.16.21 2.26 3.45 5.47 4.84.76.33 1.36.53 1.82.68.77.24 1.47.21 2.02.13.62-.09 1.88-.77 2.15-1.51.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37Z"
+        />
+    </svg>
+</a>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+    document
+        .getElementById(
+            "menuBtn"
+        )
+        .onclick = () => {
+
+            document
+                .getElementById(
+                    "navLinks"
+                )
+                .classList
+                .toggle(
+                    "open"
+                );
+
+        };
+
+
+    document
+        .querySelectorAll(
+            ".faq button"
+        )
+        .forEach(
+            button => {
+
+                button.onclick = () => {
+
+                    const item =
+                        button
+                        .parentElement;
+
+
+                    document
+                        .querySelectorAll(
+                            ".faq"
+                        )
+                        .forEach(
+                            faq => {
+
+                                if (
+                                    faq !== item
+                                ) {
+
+                                    faq
+                                    .classList
+                                    .remove(
+                                        "active"
+                                    );
+
+                                }
+
+                            }
+                        );
+
+
+                    item
+                    .classList
+                    .toggle(
+                        "active"
+                    );
+
+
+                    button
+                    .querySelector(
+                        "span"
+                    )
+                    .textContent =
+
+                    item
+                    .classList
+                    .contains(
+                        "active"
+                    )
+
+                    ? "−"
+
+                    : "+";
+
+                };
+
+            }
+        );
+
+
+</script>
+
+
+</body>
+
+</html>
